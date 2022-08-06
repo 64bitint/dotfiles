@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "transparent",
+          "foreground": "#FFEB3B",
+          "style": "plain",
+          "template": "\u26a1 ",
+          "type": "root"
+        },
+        {
+		  "leading_diamond": "\ue0b6",
+          "background": "#44475a",
+          "foreground": "#f8f8f2",
+          "style": "diamond",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "background": "#6272a4",
+          "foreground": "#f8f8f2",
+          "leading_diamond": "<#44475a,#6272a4>\ue0b0</>",
+          "properties": {
+            "folder_icon": "\uf6d7",
+            "folder_separator_icon": "<transparent> \ue0bd </>",
+            "home_icon": "\uf7db",
+            "style": "agnoster_short"
+          },
+          "style": "diamond",
+          "template": " {{ .Path }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "path"
+        },
+		{                                                                     
+          "background": "#ffb86c",                                            
+          "foreground": "#282a36",                                            
+          "powerline_symbol": "\ue0b0",                                       
+          "properties": {                                                     
+            "branch_icon": "",                                                
+            "fetch_stash_count": true,                                        
+            "fetch_status": false,                                            
+            "fetch_upstream_icon": true                                       
+          },                                                                  
+          "style": "powerline",                                               
+          "template": " \ue725 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",                               
+          "type": "git"                                                       
+        },
+        {
+          "background": "#8be9fd",
+          "foreground": "#282a36",
+          "powerline_symbol": "\ue0b0", 
+          "style": "powerline",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+	  },
+	  
+        {
+          "background": "#44475a",
+          "foreground": "#f8f8f2",
+          "leading_diamond": "<transparent,#44475a>\ue0b0</>",
+          "properties": {
+            "style": "dallas",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": " {{ .FormattedMs }}s ",
+          "trailing_diamond": "\ue0b0",
+          "type": "executiontime"
+        },
+        {
+          "background": "#ff5555",
+          "foreground": "#282a36",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": "<transparent> \uf12a</> {{ .Meaning }} ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+		{
+          "background": "#44475a",
+          "foreground": "#8be9fd",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": " {{ .UserName }}<transparent> / </>{{ (split \".\" .HostName)._0 }} <transparent>\ue0ba</>",
+          "type": "session"
+	  	},
+		{
+          "background": "#44475a",
+          "foreground": "#50fa7b",
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "style": "plain",
+          "template": "<transparent>\ue0bc </>{{ .CurrentDate | date .Format }} <#44475a,transparent>\ue0b4</>",
+          "type": "time"
+	    }
+      ],
+      "type": "prompt",
+	  "overflow": "hide"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#f8f8f2",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ff5555{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\" }} @ {{.HostName}}",
+  "version": 2
+}
