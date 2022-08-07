@@ -87,7 +87,7 @@
 		{
           "background": "#44475a",
           "foreground": "#8be9fd",
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": "<transparent,#44475a>\ue0c4</>",
           "style": "diamond",
           "template": " {{ .UserName }}<transparent> / </>{{ (split \".\" .HostName)._0 }} <transparent>\ue0ba</>",
           "type": "session"
