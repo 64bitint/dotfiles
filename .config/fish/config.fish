@@ -8,5 +8,7 @@ if status is-interactive
     if not type -q sudo; and type -q doas
         abbr -a sudo doas
     end
-    source ~/.config/fish/shellfish.fish
+    if test -e ~/.shellfishrc
+        source ~/.config/fish/shellfish.fish
+    end
 end
