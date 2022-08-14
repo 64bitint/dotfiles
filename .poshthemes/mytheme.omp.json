@@ -24,10 +24,10 @@
           "foreground": "#f8f8f2",
           "leading_diamond": "<#44475a,#6272a4>\ue0b0</>",
           "properties": {
-            "folder_icon": "\uf6d7",
+            "folder_icon": "\uf74a",
             "folder_separator_icon": "<transparent> \ue0bd </>",
             "home_icon": "\uf7db",
-            "style": "agnoster_short"
+            "style": "agnoster"
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
