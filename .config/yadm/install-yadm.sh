@@ -10,4 +10,4 @@ type -P apt-get &> /dev/null && (sudo apt-get update || true ) && sudo apt-get -
 sudo wget https://github.com/TheLocehiliosan/yadm/raw/master/yadm \
 	-O /usr/local/bin/yadm && \
 	sudo chmod +x /usr/local/bin/yadm
-yadm clone --bootstrap -b main https://github.com/64bitint/dotfiles.gitaz
+yadm clone --bootstrap https://github.com/64bitint/dotfiles.git
