@@ -4,6 +4,15 @@
 # apk add bash git
 # apt install wget bash git
 
+type -P bash &> /dev/null \
+	|| (echo "bash is required" && exit 1)
+
+type -P git &> /dev/null \
+	|| (echo "git is required" && exit 1)
+
+type -P wget &> /dev/null \
+	|| (echo "wget is required" && exit 1)
+
 mkdir -p ~/.local/bin && \
 wget -O ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && \
 chmod +x ~/.local/bin/yadm && \
