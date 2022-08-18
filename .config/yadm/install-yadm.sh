@@ -10,13 +10,13 @@
 export PATH=$PATH:~/.local/bin 
 
 type -P bash &> /dev/null \
-	|| (echo "bash is required" && req=false)
+	|| echo "bash is required" && req=false
 
 type -P git &> /dev/null \
-	|| (echo "git is required" && req=false)
+	|| echo "git is required" && req=false
 
 type -P wget &> /dev/null \
-	|| (echo "wget is required" && req=false)
+	|| echo "wget is required" && req=false
 
 $req && mkdir -p ~/.local/bin && \
 wget -O ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && \
