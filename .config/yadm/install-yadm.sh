@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# install using:
+# wget -q -O - https://github.com/64bitint/dotfiles/raw/main/.config/yadm/install-yadm.sh|sh
+
 # needs bash git wget install first:
 # apk add bash git
 # apt install wget bash git
