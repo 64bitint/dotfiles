@@ -7,6 +7,8 @@
 # apk add bash git
 # apt install wget bash git
 
+export PATH=$PATH:~/.local/bin 
+
 type -P bash &> /dev/null \
 	|| (echo "bash is required" && exit 1)
 
