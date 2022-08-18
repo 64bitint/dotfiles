@@ -1,3 +1,6 @@
+export PATH=$PATH:~/.local/bin
+
+
 FISH=`which fish`
 
 if [[ -x "$FISH" ]]; then
