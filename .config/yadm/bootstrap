@@ -7,7 +7,7 @@ cd "$HOME"
 printf 'Install oh-my-posh (y/n)? '
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then 
-	./install-posh.sh
+	./.config/yadm/install-posh.sh
 fi
 
 echo "Init submodules"
