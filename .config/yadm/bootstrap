@@ -4,5 +4,11 @@
 # be run from within $HOME (assuming this is the root of your dotfiles)
 cd "$HOME"
 
+printf 'Install oh-my-posh (y/n)? '
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then 
+	./install-posh.sh
+fi
+
 echo "Init submodules"
 yadm submodule update --recursive --init
