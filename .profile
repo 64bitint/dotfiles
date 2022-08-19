@@ -1,5 +1,5 @@
-export PATH=$PATH:~/.local/bin
-
+[ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH"
+[ -d "~/.local/bin" ] && export PATH=$PATH:~/.local/bin
 
 FISH=`which fish`
 
