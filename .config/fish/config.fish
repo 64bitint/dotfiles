@@ -10,6 +10,9 @@ if status is-interactive
     if not type -q sudo; and type -q doas
         abbr -a sudo doas
     end
+    if type -q kubectl
+        kubectl completion fish | source
+    end
     if test -e ~/.shellfishrc
         source ~/.config/fish/shellfish.fish
     end
