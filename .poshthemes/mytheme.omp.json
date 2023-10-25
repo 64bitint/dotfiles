@@ -53,7 +53,7 @@
 	    "gitlab_icon": "\ue65c ",
 	    "github_icon": "\ue65b ",	  
             "git_icon": "\ue65d ",
-	    "upstream_icons": { "git.mcmaster": "\uf296 " }
+	    "upstream_icons": { "git.mcmaster": "\uf19d " }
           },                                                                  
           "style": "powerline",                                               
           "templatx": " \uf418 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }}) ",
