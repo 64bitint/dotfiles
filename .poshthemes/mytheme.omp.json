@@ -24,7 +24,7 @@
           "foreground": "#f8f8f2",
           "leading_diamond": "<#44475a,#6272a4>\ue0b0</>",
           "properties": {
-            "folder_icon": "\uf74a",
+            "folder_icon": "\uf4d3",
             "folder_separator_icon": "<transparent> \ue0bd </>",
             "home_icon": "\uf4e2",
             "max_depth": 3,
@@ -52,8 +52,8 @@
             "fetch_upstream_icon": true                                       
           },                                                                  
           "style": "powerline",                                               
-          "templatx": " \ue725 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",
-          "template": " \ue725 {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",                           
+          "templatx": " \uf418 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }}) ",
+          "template": " \uf418 {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf4a7 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf448 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }} ",                           
           "type": "git"                                                       
         },
         {
