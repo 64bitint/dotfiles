@@ -50,9 +50,9 @@
             "fetch_stash_count": true,                                        
             "fetch_status": true,                                            
             "fetch_upstream_icon": true,   
-	    "gitlab_icon": "\ue65c",
-	    "github_icon": "\ue65b",	  
-            "git_icon": "\ue65d"
+	    "gitlab_icon": "\ue65c ",
+	    "github_icon": "\ue65b ",	  
+            "git_icon": "\ue65d "
           },                                                                  
           "style": "powerline",                                               
           "templatx": " \uf418 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }}) ",
