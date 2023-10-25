@@ -65,8 +65,8 @@
 	  "style": "powerline",
 	  "powerline_symbol": "",
 	  "foreground": "#ffffff",
-	  "background": "#7FD5EA",
-	  "template": " ‭\ue627 {{ .Full }} "
+	  "background": "#007D9C",
+	  "template": " \ue65e {{ .Full }} "
 	},
 	{
 	  "type": "php",
