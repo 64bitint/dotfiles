@@ -57,7 +57,7 @@
           },                                                                  
           "style": "powerline",                                               
           "templatx": " \uf418 ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }}) ",
-          "template": " \uf418 {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf4a7 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf448 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }} ",                           
+          "template": " \uf418 {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }}<#803700> \uf4a7 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf448 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf411 {{ .StashCount }}{{ end }} ",                           
           "type": "git"                                                       
         },
         {
