@@ -33,11 +33,13 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ] && type oh-my-posh &> /dev/null; then
   eval "$(oh-my-posh init zsh --config ~/.poshthemes/mytheme.omp.json)"
 fi
 
-LISTMAX=-1
+# disable zsh: do you wish to see all prompt
+zstyle ':completion:*' list-prompt   ''
+zstyle ':completion:*' select-prompt ''
 
-#autoload -U compinit; compinit
 autoload -U compinit && compinit -u
 zstyle ':completion:*' menu select
+
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
