@@ -12,7 +12,8 @@ fi
 
 FPATH=~/.config/zsh/site-functions:$FPATH
 
-#source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# allow comments 
+setopt INTERACTIVE_COMMENTS
 
 setopt AUTO_CD
 
@@ -22,7 +23,10 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_REDUCE_BLANKS
 
-alias ll='ls -alFh --color'
+alias ls='ls --color'
+alias ll='ls -alFh'
+alias la='ls -A'
+alias l='ls -CF'
 
 #setopt CORRECT # Try to correct the spelling of commands
 #setopt CORRECT_ALL # Try to correct the spelling of all arguments in a line
